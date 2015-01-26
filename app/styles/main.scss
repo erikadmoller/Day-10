@@ -3,6 +3,8 @@
 /*@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";*/
 /*endbower*/
 
+@import "reset";
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 
 body {
@@ -17,192 +19,344 @@ body {
 
 /* Text on the grey header*/
 .header {
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: white;
-  padding-left: 1.5em;
-  padding-top: 0.5em;
+  padding-left: 1.4em;
+  padding-top: 0.6em;
   padding-bottom: 0.5em;
+  font-family: 'Pacifico', cursive;
 }
 
-/*Menu holds the top navigation*/
+/* Menu holds the top navigation */
+
+.nav-box {
+  border-bottom: 1px solid #ddd;
+}
 
 .menu {
   width: 24.65%;
-  color: #aaa;
-  font-size: 1em;
+  color: #2D2E2E;
+  font-size: 1.3em;
   text-transform: uppercase;
   display: inline-block;
-  border-bottom: 1px solid black;
   text-align: center;
-  padding: 1em 0;
+  font-family: 'Open Sans Condensed', sans-serif; font-weight: 700;
+  vertical-align: top;
 }
 
-#right-bdr {
-  border-right: 1px solid black;
+.menu:hover {
+  background: #eee;
+}
+
+a {
+  color: #2D2E2E;
+  text-decoration: none;
+}
+
+#top-nav {
+  border-right: 1px solid #ddd;
+  padding: 0.7em 0;
+
 }
 
 .media-container {
-  width: 1em;
-  height: 1em;
-  background-color: black;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: #2D2E2E;
   display: inline-block;
   vertical-align: bottom;
+  margin: 0.47em 0;
+}
+
+.media-container img {
+  width: 100%;
+  height: 100%;
 }
 
 /*inner-box is the child of the outer box, main.*/
 .intro {
-  margin: 2em 2em;
+  margin: 2em 2.3em;
 }
 
-.photo-box {
-  height: 17em;
-  background-color: red;
-  margin-bottom: 1.8em;
+.photo-box img {
+  width: 100%;
+  background-color: black;
 }
 
 .text-box {
+  margin-top: 1em;
   text-align: center;
-  padding-bottom: 3em;
+  padding-bottom: 1em;
   line-height: 2.5em;
 }
 
+/* Major Heading in the project */
 .text-box h1 {
-  font-size: 2em;
+  font-size: 2.2em;
   text-transform: uppercase;
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-weight: 700;
+  color: #2D2E2E;
 }
 
 .text-box h2 {
   font-size: 1.5em;
+  font-family: 'Lato'; 
+  font-weight: 400;
+  font-style: italic;
+  color: #7A7A7A;
 }
 
 .text-box p {
   line-height: 1.5em;
+  color: #2D2E2E;
+  font-family: 'Lato';
+  font-size: 0.9em;
 }
 
 #dash {
-  width: 4em;
-  height: 0.3em;
-  background-color: black;
+  width: 3.8em;
+  height: 0.25em;
+  background-color: #2D2E2E;
   margin: 0.7em auto;
 }
 
-/*Begin container2 and portfolio content and sections*/
+/*Begin container2 - includes intro and all portfolio content and sections*/
 
 .container2 {
   text-align: center;
-  background-color: #ddd;
+  background-color: #F5F5F5;
 }
 
+/* This gray bar spans 100% above title heading */
 #bar-container2 {
   width: 100%;
-  height: 0.3em;
-  background-color: black;
-  margin-bottom: 1.5em;
+  height: 0.2em;
+  background-color: #E3E3E6;
+  margin-bottom: 1.6em;
+  clear: both;
 }
 
 .portfolio h1 {
-  font-size: 2em;
+  font-size: 2.2em;
   text-transform: uppercase;
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-weight: 700;
+  color: #2D2E2E;
+}
+
+/* Child of container2 - includes 'nav-portfolio' and sides-padded thin bar below title heading and thick dash */
+.sub-container {
+  padding: 0 0.6em;
 }
 
 .nav-portfolio {
   display: inline-block;
   text-transform: uppercase;
-  padding: 3.5em 1em 0 0;
+  padding: 2.7em 0.7em 0 0;
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-weight: 300;
+  font-size: 1.3em;
+  color: #7A7A7A;
 }
 
+#dash-porfolio {
+  width: 3.8em;
+  height: 0.25em;
+  background-color: #2D2E2E;
+  margin: 0.7em auto;
+  clear: both;
+}
+
+/* Thin side-padded bar below nav-porfolio */
 #bar-portfolio {
   width: 100%;
-  height: 0.05em;
-  background-color: black;  
-  margin: 1em 0;
+  height: 0.1em;
+  background-color: #E3E3E6;  
+  margin: 1.2em auto;
 }
 
-/*Begin project container with each project inside*/
+/* Child of sub-conteiner (grandchild of container2) - begin project container with each project self-contained */
 
 .project {
   margin: 0 1em 1em 1em;
+}
+
+/* Project image box and background above text box */
+.project1 {
+  // height: 14em;
+  border-radius: 0.3em 0.3em 0 0;
+}
+
+.project1 img {
+  opacity: 0.83;
+  width: 100%;
+  border-radius: 0.3em 0.3em 0 0;
+  background-color: #ccc;
+  vertical-align: bottom;
+}
+
+// .project1-darker img {
+//   // opacity: 0.6;
+//   width: 100%;
+//   border-radius: 0.3em 0.3em 0 0;
+//   background-color: black;
+//   vertical-align: bottom;
+// }
+
+/* Text box includes title and descriptions below the project image box */
+.project-text-box {
+  background-color: white;
+  padding: 0.7em 0.7em;
+  line-height: 1.3em;
   text-align: left;
 }
 
-.project1 {
-  height: 12.5em;
-  background-color: #bbb;
-  padding-top: 2.5em;
-}
-
-.hand-icon {
-  border-radius: 100%;
-  width: 10em;
-  height: 10em;
-  background-color: black;
-  margin: 0 auto;
-}
-
-.project-text-box {
-  background-color: white;
-  padding: 1em 1em;
-  line-height: 1.5em;
-}
-
+/* Main project title */
 .project-text-box h1 {
-  font-size: 1em;
+  font-size: 1.1em;
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-weight: 700;
+  color: #2D2E2E;
 }
 
+/* Project type */
 .project-text-box h2 {
   font-size: 0.8em;
+  font-family: 'Lato'; 
+  font-weight: 700;
+  font-style: italic;
+  color: #9A9A9A;
 }
 
+/* Project description */
 .project-text-box p {
-  padding-bottom: 0.7em;
+  padding: 0.5em 0 0.5em 0;
+  color: #2D2E2E;
+  font-family: 'Lato'; 
+  font-weight: 400;
+  font-size: 0.9em;
 }
 
+/* Project bar */
 #bar-project {
   width: 100%;
-  height: 0.05em;
-  background-color: black;  
+  height: 0.07em;
+  background-color: #E3E3E6;  
 
 }
 
+/* Below descroption - Project tag types */
 .project-text-box h3 {
+  font-size: 0.9em;
   padding-top: 0.7em;
+  font-family: 'Lato'; 
+  font-weight: 400;
+  color: #7A7A7A;
 }
 
-/* Custom page footer */
+/* Page footer */
 .footer {
+  margin-top: 1.2em;
   background-color: white;
-  padding: 1.5em 0;
+  padding: 0.7em 0;
 }
 
-.arrow-pic {
-  width: 3.5em;
-  height: 3.5em;
-  background-color: black;
+.arrow-pic img {
   margin: 0 auto;
+  height: 4em;
 }
 
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-//   .container {
-//     max-width: 730px;
-//   }
 
-//   /* Remove the padding we set earlier */
-//   .header,
-//   .marketing,
-//   .footer {
-//     padding-left: 0;
-//     padding-right: 0;
-//   }
+.wrapper {
+  position: fixed;
+}
 
-//   Space out the masthead
-//   .header {
-//     margin-bottom: 30px;
-//   }
+/* This is the gray header at the top of the page */
+.container {
+  float: left;
+  width: 60%;
+}
 
-//   /* Remove the bottom border on the jumbotron for visual effect */
-//   .jumbotron {
-//     border-bottom: 0;
-//   }
+/* Menu holds the top navigation */
+.nav-box {
+  display: inline-block;
+  width: 40%;
+  border: none;
+}
+
+.menu {
+  width: 24.5%;
+  font-size: 1em;
+}
+
+// .menu:hover {
+//   // background: #eee;
+//   display: none;
+// }
+
+#top-nav {
+  border-right: 2px solid #eee;
+  padding: 1em 0;
+}
+
+.media-container {
+  margin: 0.8em 0;
+}
+
+/*inner-box is the child of the outer box, main.*/
+.main {
+
+}
+
+.intro {
+  float: left;
+  width: 50%;
+}
+
+#dash-porfolio {
+  display: none;
+}
+
+.vertical-graybar {
+  width: 1.6%;
+  height: 42em;
+  background-color: #ccc; 
+  display: inline-block;
+}
+
+/*Begin container2 - includes intro and all portfolio content and sections*/
+
+.container2 {
+  float: right;
+  width: 39.9%;
+}
+
+/* This gray bar spans 100% above title heading */
+#bar-container2 {
+  display: none;
+}
+
+.portfolio h1 {
+  display: none;
+}
+
+/* Child of container2 - includes 'nav-portfolio' and sides-padded thin bar below title heading and thick dash */
+.sub-container {
+
+}
+
+.nav-portfolio {
+  // padding: 1.5em 0.7em 0 0;
+  font-size: 1.1em;
+  margin-top: 1.2em;
+}
+
+#bar-portfolio {
+  margin: 0.8em auto;
+}
+
 }
