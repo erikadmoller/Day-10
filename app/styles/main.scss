@@ -42,7 +42,11 @@ body {
   text-align: center;
   font-family: 'Open Sans Condensed', sans-serif; font-weight: 700;
   vertical-align: top;
+    border-right: 1px solid #ddd;
+  padding: 0.7em 0;
+  background-color: white;
 }
+
 
 .menu:hover {
   background: #eee;
@@ -53,9 +57,16 @@ a {
   text-decoration: none;
 }
 
-#top-nav {
-  border-right: 1px solid #ddd;
-  padding: 0.7em 0;
+// #top-nav {
+//   border-right: 1px solid #ddd;
+//   padding: 0.7em 0;
+// }
+
+.social {
+  display: inline-block;
+  background-color: white;
+  // width: 24.65%;
+  margin: 0 1.8em;
 
 }
 
@@ -65,7 +76,7 @@ a {
   background-color: #2D2E2E;
   display: inline-block;
   vertical-align: bottom;
-  margin: 0.47em 0;
+  margin: 0.8em 0;
 }
 
 .media-container img {
@@ -273,6 +284,8 @@ a {
 
 .wrapper {
   position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
 /* This is the gray header at the top of the page */
@@ -303,29 +316,35 @@ a {
   padding: 1em 0;
 }
 
+.social {
+  padding: 0.75em 1.7em;
+  margin: 0;
+}
+
 .media-container {
-  margin: 0.8em 0;
+  // margin: 0.8em 0;
+  margin: 0;
 }
 
 /*inner-box is the child of the outer box, main.*/
 .main {
-
+  overflow: scroll;
+  position: fixed;
+  height: 100%;
 }
 
 .intro {
   float: left;
   width: 50%;
+  margin: 2em 4.1em;
 }
 
 #dash-porfolio {
   display: none;
 }
 
-.vertical-graybar {
-  width: 1.6%;
-  height: 42em;
-  background-color: #ccc; 
-  display: inline-block;
+.text-box {
+  margin-bottom: 3em;
 }
 
 /*Begin container2 - includes intro and all portfolio content and sections*/
